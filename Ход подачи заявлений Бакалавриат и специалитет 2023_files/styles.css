@@ -1,0 +1,655 @@
+@import url("../fonts/fontawesome/all.css");
+@import url("../js/plugins/bootstrap/bootstrap.min.css");
+@import url("../js/plugins/datepicker/datepicker.css");
+body {
+  background-color: #f5f5f5;
+  background-color: #f3f7fa;
+  font-size: 14px;
+  line-height: 1.4;
+}
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1300px;
+  }
+}
+.form-control {
+  border-radius: 0;
+  font-size: 14px;
+}
+.btn {
+  border-radius: 0;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 260px;
+  height: 250px;
+  margin-left: -150px;
+  margin-top: -250px;
+}
+.login-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-block {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 20px 20px 20px;
+  border-radius: 3px;
+}
+.login label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.rasp {
+  padding: 30px 0;
+}
+.rasp header {
+  margin-bottom: 40px;
+}
+.rasp header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .rasp header .logo {
+    margin: 0 auto;
+    width: 290px;
+  }
+}
+.rasp header .logo-img {
+  padding-top: 3px;
+  margin-right: 10px;
+}
+@media (max-width: 575px) {
+  .rasp header .logo-img img {
+    max-width: 145px;
+  }
+}
+.rasp header .logo-text {
+  line-height: 1.2;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .rasp header .logo-text {
+    line-height: 1.1;
+    font-size: 10px;
+  }
+}
+.rasp .header-info {
+  margin: 30px 0 20px;
+}
+.rasp .header-info h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.rasp .header-info h1 span {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.rasp .header-info h1 .institute {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.rasp .header-info h1 .direction {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.rasp .breadcrumb {
+  background: transparent;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.rasp .breadcrumb li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 0;
+}
+.rasp .breadcrumb li a,
+.rasp .breadcrumb li span {
+  font-size: 13px;
+  padding: 5px 8px 5px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  color: #333333;
+  display: block;
+}
+.rasp .breadcrumb li a:hover {
+  color: #00a772;
+}
+.rasp .page-menu {
+  background: transparent;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.rasp .page-menu li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 0;
+}
+.rasp .page-menu li a {
+  font-size: 13px;
+  padding: 4px 8px 5px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  color: #333333;
+  display: block;
+}
+.rasp .page-menu li a:hover {
+  color: #00a772;
+}
+.rasp .page-menu li img {
+  height: 17px;
+  margin-right: 7px;
+}
+.rasp .page-menu li:last-child {
+  margin-right: 0;
+}
+.rasp .lesson-warnings {
+  background: #ffffff;
+  padding: 5px 15px 10px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  line-height: 1.4;
+  border: 1px solid #e21e23;
+}
+.rasp .lesson-warnings .lesson-warning {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.rasp .lesson-warnings .lesson-warning-text {
+  font-size: 13px;
+}
+.rasp-block {
+  margin: 30px 0;
+  background: #ffffff;
+}
+.rasp-block .block-title {
+  line-height: 1;
+  background: #fffde7;
+  border: 1px solid #dddddd;
+  border-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 10px 12px;
+}
+.rasp-block .block-border {
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+.rasp-block-border {
+  border: 1px solid #dddddd;
+}
+.rasp-block .link {
+  font-weight: 600;
+  color: #333333;
+  padding: 10px;
+  display: inline-block;
+}
+.rasp-structure .card {
+  border-radius: 0;
+}
+.rasp-structure .card-header {
+  padding: 0;
+}
+.rasp-structure .institute {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  color: #00a772;
+}
+.rasp-structure .institute.collapsed {
+  color: #212529;
+}
+.rasp-structure .edu-form {
+  font-size: 16px;
+  font-weight: 600;
+  color: #F53E3E;
+}
+.rasp-structure .group-type {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #046cc2;
+}
+.rasp-structure .groups {
+  margin-bottom: 10px;
+}
+.rasp-structure .group {
+  margin-top: 5px;
+  min-width: 100px;
+  padding-right: 15px;
+}
+.rasp-structure .group a {
+  color: #333333;
+  font-weight: 400;
+}
+.rasp-structure .group a:hover {
+  color: #00a772;
+}
+.rasp-structure .group-start {
+  margin-top: 6px;
+  font-weight: 500;
+  min-width: 60px;
+  padding-right: 0;
+  font-size: 13px;
+}
+.rasp-structure .file {
+  color: #333333;
+  font-weight: 400;
+}
+.rasp-structure .file:hover {
+  color: #00a772;
+}
+.rasp .calendar {
+  line-height: 1;
+}
+.rasp .calendar .day {
+  border-left: 1px solid #dddddd;
+}
+@media (min-width: 992px) {
+  .rasp .calendar .day {
+    width: calc(100%/7);
+  }
+}
+.rasp .calendar .week {
+  background: #ffffff;
+  margin-top: 40px;
+  border: 1px solid #dddddd;
+  border-left: 0;
+}
+@media (min-width: 992px) {
+  .rasp .calendar .week {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.rasp .calendar .day-header {
+  background: #545b62;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  height: 44px;
+  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rasp .calendar .day-header span {
+  font-weight: 600;
+  margin-bottom: 3px;
+  display: block;
+}
+@media (max-width: 991px) {
+  .rasp .calendar .day-header.day-header-hour,
+  .rasp .calendar .day-header.day-header-empty {
+    display: none;
+  }
+}
+.rasp .calendar .day-lesson {
+  padding: 7px;
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px #dddddd solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 991px) {
+  .rasp .calendar .day-lesson {
+    padding: 10px;
+  }
+}
+.rasp .calendar .day-lesson span {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+@media (min-width: 992px) {
+  .rasp .calendar .day-lesson {
+    height: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .rasp .calendar .day-lesson.day-lesson-empty,
+  .rasp .calendar .day-lesson.day-lesson-hour {
+    display: none;
+  }
+}
+.rasp .calendar .lesson-hour {
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .rasp .calendar .lesson-hour {
+    display: none;
+  }
+}
+.rasp .calendar .lesson-room {
+  margin-bottom: 5px;
+}
+.rasp .calendar .lesson-room-1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.rasp .calendar .lesson-room-2 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.rasp .calendar .lesson-name {
+  font-size: 12px;
+  line-height: 1.2;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 42px;
+  font-weight: 500;
+  color: #222222;
+}
+.rasp .calendar .lesson-type {
+  color: #555555;
+}
+.rasp .calendar .lesson-teacher {
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.rasp .calendar .lesson-teacher a {
+  color: #00a772;
+}
+.rasp .calendar-department table {
+  background: #ffffff;
+  font-size: 13px;
+}
+.rasp .calendar-department td {
+  vertical-align: middle;
+}
+.rasp .calendar-department .day {
+  min-width: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 1.4;
+}
+.rasp .calendar-department .lesson {
+  width: 100%;
+}
+.rasp .calendar-department .hour {
+  min-width: 60px;
+  margin-bottom: 3px;
+}
+@media (min-width: 768px) {
+  .rasp .calendar-department .hour {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+.rasp .calendar-department .room {
+  min-width: 100px;
+  margin-bottom: 3px;
+}
+@media (min-width: 768px) {
+  .rasp .calendar-department .room {
+    margin-bottom: 0;
+  }
+}
+.rasp .calendar-department .group {
+  min-width: 110px;
+}
+.rasp .calendar-department span {
+  font-weight: 600;
+}
+.rasp .calendar-department .teacher {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.rasp .rasp-period {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -35px;
+}
+.rasp .rasp-date {
+  font-size: 16px;
+  text-align: center;
+}
+.rasp .rasp-info {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 15px 20px 20px;
+  max-width: 850px;
+  margin: 30px auto 0px;
+  font-size: 13px;
+}
+.rasp .rasp-info-warning {
+  border: 1px solid #F53E3E;
+}
+.rasp .teachers_abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 30px 0;
+  line-height: 1;
+}
+.rasp .teachers_abc div {
+  padding: 3px;
+  text-align: center;
+}
+.rasp .teachers_abc a {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  padding: 5px;
+  color: #333333;
+}
+.rasp .teachers_abc a:hover {
+  color: #00a772;
+  text-decoration: none;
+}
+.rasp .teachers_list .list-abc {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.rasp .teachers_list .list-teacher {
+  padding: 15px 15px 10px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.rasp .teachers_list .list-teacher .teacher {
+  margin-bottom: 5px;
+}
+.rasp .teachers_list .list-teacher a {
+  color: #333333;
+  font-size: 14px;
+}
+.rasp .teachers_list .list-teacher a:hover {
+  color: #00a772;
+}
+.type-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+.table {
+  background-color: #FFFFFF;
+}
+.table thead th {
+  font-size: 11px;
+}
+.table-structure thead {
+  background: #f5f5f5;
+}
+.table-structure td,
+.table-structure th {
+  padding: 7px 10px;
+  vertical-align: middle;
+}
+.table-structure td.bg-b,
+.table-structure th.bg-b {
+  background: #f8fff0;
+}
+.table-structure td.bg-d,
+.table-structure th.bg-d {
+  background: #fff3e0;
+}
+.table-structure-subtitle {
+  background: #eceff1;
+  font-size: 15px;
+}
+.table-structure a {
+  color: #00a772;
+}
+.table-structure a:hover {
+  color: #00a772;
+}
+.direction-message {
+  background: #FFFFFF;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 400px;
+}
+.direction-date {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.header-year {
+  font-size: 24px;
+  font-weight: 700;
+}
+.header-year-sub {
+  font-size: 18px;
+  font-weight: 600;
+}
+.rang_date {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 105px;
+}
+.rang_date:focus {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main-block {
+  padding: 25px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 30px;
+  min-height: 154px;
+  -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+          box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+  -webkit-transition: -webkit-box-shadow;
+  transition: -webkit-box-shadow;
+  -o-transition: box-shadow;
+  transition: box-shadow;
+  transition: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+.main-block:hover {
+  -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+          box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+}
+.main-block a {
+  color: #222222;
+}
+.main-block a:hover {
+  color: #00a772;
+}
+.main-block .main-block-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@-webkit-keyframes mainblock {
+  0% {
+    -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+            box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+            box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+  }
+}
+@keyframes mainblock {
+  0% {
+    -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+            box-shadow: 0px 1px 20px rgba(39, 74, 146, 0), 0px 16px 40px rgba(39, 74, 146, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+            box-shadow: 0px 1px 20px rgba(39, 74, 146, 0.05), 0px 16px 40px rgba(39, 74, 146, 0.05);
+  }
+}
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
